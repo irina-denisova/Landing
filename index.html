@@ -34,9 +34,9 @@
         <section class="mainscreen">
             <div class="wrap wrap--mainscreen">
                 <div class="mainscreen__content">
-                    <h1 class="title">
+                    <h1 class="title title--mainscreen">
                         Turnkey Repair in the<br>
-                        city of <span>Rostov-on-Don</span>
+                        city of <span class="title--color">Rostov-on-Don</span>
                     </h1>
                     <p class="mainscreen__subtitle">Get ready-made turnkey repairs on time<br>
                             with work time saving up to 45 days and 20% from<br>
@@ -46,6 +46,98 @@
                 </div>
             </div>
             <div class="mainscreen-overlay"></div>
+        </section>
+        <section class="project">
+            <div class="wrap wrap--project">
+                <nav class="header-navigation">
+                    <ul class="header-menuproject">
+                        <li class="header-menuproject__item">
+                            <a class="header-menuproject__link" href="#">Rostov-on-Don, Admiral</a>
+                        </li>
+                        <li class="header-menuproject__item">
+                            <a class="header-menuproject__link" href="#">Sochi Thieves</a>
+                        </li>
+                        <li class="header-menuproject__item">
+                            <a class="header-menuproject__link" href="#">Rostov-on-Don Patriotic</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="project-content">
+                    <div class="project-content__description">
+                        <h3 class="title title--project">Completed<br> projects</h3>
+                        <p class="project-content___subtitle">Only a small part of the work performed by our company is presented
+                                                                on the site. For 14 years on in the construction
+                                                                market we have made happy more than 1000 families</p>
+                    </div>
+                    <div class="project-content__images">
+                        <img src="./images/image1.svg" class="project-content__images__item">
+                        <!--div class="mySlides fade">
+                            <img src="../images/image-slide1.2.svg" class="slide-images__two">
+                        </div-->
+                    </div>
+                    <div class="project-content__slide-block">
+                        <div class="project-content__slide__item">
+                            <h2 class="subtitle title--slide-item">City:</h2>
+                            <span class="caption">Rostov-on-Don<br> LCD admiral</span>
+                        </div>
+                        <div class="project-content__slide__item">
+                            <h2 class="subtitle title--slide-item">apartment area:</h2>
+                            <span class="caption">81 m2</span>
+                        </div>
+                        <div class="project-content__slide__item">
+                            <h2 class="subtitle title--slide-item">Repair time:</h2>
+                            <span class="caption">3.5 months</span>
+                        </div>
+                        <div class="project-content__slide__item">
+                            <h2 class="subtitle title--slide-item">Repair Cost:</h2>
+                            <span class="caption">Upon request</span>
+                        </div>
+                        <div class="project-content__dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="videoform">
+            <div class="wrap wrap--videoform">
+                <h3 class="subtitle title--videoform">online control</h3>
+                <div class="videoform__icon">
+                    <img src="./icons/video.svg" class="videoform__icon__item">
+                </div>
+                <div class="videoform__video">
+                    <img src="./images/video.svg" class="videoform__video__item">
+                </div>
+                <hr class="videoform__line">
+                <p class="videoform__text">At each facility, a camera is installed that 
+                            broadcasts the progress of work on the clock. 
+                            At any time, you can go to our website and monitor 
+                            the progress of work in your apartment. You can 
+                            watch the live broadcast from one of our facilities!
+                            Leave a request below and you will receive a link to
+                            the broadcast.</p>
+                <form action="/order" method="post" class="videoform__form">
+                    <div class="videoform__form__input">
+                        <label>
+                            <span class="caption">Name</span>
+                            <input type="text" class="input" name="name" placeholder="What is your name:" required>
+                        </label>
+                        <label>
+                            <span class="caption">Phone</span>
+                            <input type="text" class="input"  name="phone" placeholder="Your phone number:" required>
+                        </label>
+                        <input type="submit" class="button button--submit" name="submit"  value="submit">
+                    </div>
+                        
+                    <div class="videoform__form__checkbox">
+                        <input type="checkbox" id="data" name="data"
+                               checked class="fake-checkbox">
+                        <label for="data" class="input">I agree to the processing of personal data</label>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 </body>

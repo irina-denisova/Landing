@@ -415,7 +415,7 @@ ul {
 
 .videoform__video::after {
   content: '';
-  background-image: url(../icons/Group8.png);
+  background-image: url(../icons/play.svg);
   background-size: cover;
   width: 85px;
   height: 85px;

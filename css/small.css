@@ -93,12 +93,18 @@
 
 .project-content {
   display: flex;
-  flex-direction: column;
+  height: 100%;
+}
+
+.project-content__slide-block,
+.project-content__description {
+  margin-right: 0;
 }
 
 .project-content__description {
   margin-bottom: 10px;
   text-align: center;
+  order: 1;
 }
 
 .title--project {
@@ -115,6 +121,7 @@
   margin: 36px 0 0 0;
   position: relative;
   height: auto;
+  order: 2;
 }
 
 .project-content__images__item {
@@ -154,6 +161,8 @@
 
 .project-content__slide-block {
   width: 25em;
+  order: 3;
+  margin-top: 36px;
 }
 
 /* Page 3 - online control */

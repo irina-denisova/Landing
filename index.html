@@ -41,8 +41,8 @@
                     <p class="mainscreen__subtitle">Get ready-made turnkey repairs on time<br>
                             with work time saving up to 45 days and 20% from<br>
                             cost of materials due to the organization of work</p>
-                    <button class="button button-calc-cost">CALCULATE THE COST</button>
-                    <button class="button button-submit">SUBMIT YOUR APPLICATION</button>
+                    <button class="button mainscreen__button-calc-cost">CALCULATE THE COST</button>
+                    <button class="button mainscreen__button-submit">SUBMIT YOUR APPLICATION</button>
                 </div>
             </div>
             <div class="mainscreen-overlay"></div>
@@ -71,19 +71,19 @@
                     </div>
                     <div class="project-content__slide-block">
                         <div class="project-content__slide__item">
-                            <h2 class="subtitle l title--slide-item">City:</h2>
+                            <h2 class="subtitle title--slide-item">City:</h2>
                             <span class="caption">Rostov-on-Don<br> LCD admiral</span>
                         </div>
                         <div class="project-content__slide__item">
-                            <h2 class="subtitle l title--slide-item">apartment area:</h2>
+                            <h2 class="subtitle title--slide-item">apartment area:</h2>
                             <span class="caption">81 m2</span>
                         </div>
                         <div class="project-content__slide__item">
-                            <h2 class="subtitle l title--slide-item">Repair time:</h2>
+                            <h2 class="subtitle title--slide-item">Repair time:</h2>
                             <span class="caption">3.5 months</span>
                         </div>
                         <div class="project-content__slide__item">
-                            <h2 class="subtitle l title--slide-item">Repair Cost:</h2>
+                            <h2 class="subtitle title--slide-item">Repair Cost:</h2>
                             <span class="caption">Upon request</span>
                         </div>
                         <div class="project-content__dots">
@@ -121,17 +121,15 @@
                             Leave a request below and you will receive a link to
                             the broadcast.</p>
                 <form action="/order" method="post" class="videoform__form">
-                    <div class="videoform__form__input">
-                        <label>
-                            <span class="caption">Name</span>
-                            <input type="text" class="m input" name="name" placeholder="What is your name:" required>
-                        </label>
-                        <label>
-                            <span class="caption">Phone</span>
-                            <input type="text" class="m input"  name="phone" placeholder="Your phone number:" required>
-                        </label>
-                        <input type="submit" class="button button--submit" name="submit"  value="submit">
-                    </div>
+                    <label>
+                        <span class="caption">Name</span>
+                        <input type="text" class="input" name="name" placeholder="What is your name:" required>
+                    </label>
+                    <label>
+                        <span class="caption">Phone</span>
+                        <input type="text" class="input"  name="phone" placeholder="Your phone number:" required>
+                    </label>
+                    <input type="submit" class="button button--submit" name="submit"  value="submit">
                         
                     <div class="videoform__form__checkbox">
                         <input type="checkbox" id="data" name="data"

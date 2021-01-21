@@ -68,8 +68,8 @@
 .project-content__description,
 .project-content__images,
 .videoform__form,
-.videoform__form__input input,
 .button--submit,
+.videoform__form input,
 .videoform__text,
 .repair__block__item    {
   width: 100%;
@@ -230,19 +230,19 @@
   margin-top: 61px;
 }
 
-.videoform__form__input label {
+.videoform__form label {
   font-size: 13px;
   line-height: 138.72%;
   color: white;
 }
 
-.videoform__form__input span {
+.videoform__form span {
   font-size: 13px;
   line-height: 21px;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.videoform__form__input {
+.videoform__form {
   display: flex;
   flex-direction: column;
 }
@@ -257,14 +257,12 @@ label:first-child {
 }
 
 input[type = 'submit'] {
-  transform: translateY(80px);
+  transform: translateY(105px);
 }
 
 .videoform__form__checkbox {
-  margin-top: 0;
-  transform: translateY(-20px);
-  justify-content: flex-start;
-  margin-bottom: 40px;
+  transform: translateY(-80px);
+  text-align: left;
 }
 
 label[for = 'data'],

@@ -19,7 +19,7 @@ a:hover {
   color: #E3B873;
 }
 
-ul {
+.header-navigation {
   list-style: none;
 }
 
@@ -74,7 +74,6 @@ ul {
 .caption {
   font-size: 13px;
   line-height: 21px;
-
   color: #FFFFFF;
 }
 
@@ -219,8 +218,6 @@ ul {
 
 .header-menuproject__link {
   color: rgba(255, 255, 255, 0.3);
-  font-size: 14px;
-  line-height: 19px;
   text-transform: uppercase;
 }
 
@@ -265,7 +262,7 @@ ul {
   margin-top: 34px;
   font-size: 14px;
   line-height: 27px;
-  color: white;
+  color: #FFFFFF;
 }
 
 .project-content__slide-block {
@@ -284,25 +281,21 @@ ul {
 }
 
 .title--slide-item{
-  font-size: 18px;
-  line-height: 25px;
   color: #E3B873;
   text-align: left;
   margin-bottom: 9px;
 }
 
 .project-content__dots {
-  width: 205px;
   display: flex;
   justify-content: center;
-  position: relative;
 }
 
 .dot {
   display: inline-block;
   cursor: pointer;
-  width: 9.5px;
-  height: 9.5px;
+  width: 10px;
+  height: 10px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
@@ -324,21 +317,15 @@ ul {
   content: '';
   background-image: url(../icons/slide.svg);
   background-size: cover;
-  position: absolute;
-  z-index: 999;
+  z-index: 1;
   width: 40px;
-  height: 12px;
+  height: 10px;
   cursor: pointer;
   transition: 0.6s ease;
 }
 
 .project-content__dots::after {
   transform: rotate(180deg);
-  right: 0;
-}
-
-.project-content__dots::before {
-  left: 0;
 }
 
 .dot:hover {
@@ -347,13 +334,37 @@ ul {
 
 /* Page 3 - video page */
 
+.subtitle_icon {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.subtitle_icon::before,
+.subtitle_icon::after {
+  content: " ";
+  display: inline-block;
+  height: 3px;
+  text-shadow: none;
+  background-color: #E3B873;
+  width: 32px;
+}
+
+.subtitle_icon::before {
+  margin: 0 10px 10px 0;
+}
+
+.subtitle_icon::after {
+  margin: 0 0 10px 10px;
+}
+
 .videoform {
   margin-top: -340px;
   height: 1072px;
 }
 
 .wrap--videoform {
-  width: 817px;
+  width: 56.73%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,34 +374,7 @@ ul {
   color: #FFFFFF;
 }
 
-.videoform__icon {
-  display: inline-block;
-  width: 120px;
-  margin-top: 20px;
-  position: relative;
-  text-align: center;
-}
-
-.videoform__icon::before,
-.videoform__icon::after {
-  content: '';
-  border: 1px solid #E3B873;
-  width: 31px;
-  position: absolute;
-  z-index: 999;
-  top: 50%;
-}
-
-.videoform__icon::before {
-  left: 0;
-}
-
-.videoform__icon::after {
-  right: 0;
-}
-
 .videoform__video {
-  margin-top: 36px;
   position: relative;
   width: 100%;
   height: auto;
@@ -437,13 +421,10 @@ ul {
 .videoform__text {
   margin-top: 34.5px;
   display: inline-block;
-  width: 681px;
-  text-align: center;
+  width: 672px;
 
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
-  line-height: 37px;
+  line-height: 36.83px;
   text-align: center;
 
   color: #363636;
@@ -527,4 +508,89 @@ textarea:focus,
 input:focus,
 select:focus {
   outline: none;
+}
+
+/* Page 4 - Types of Repair */
+
+.repair {
+  margin-top: 45px;
+  height: 760px;
+}
+
+.wrap--repair {
+  width: 85.83%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.title--repair {
+  width: 100%;
+  text-align: center;
+}
+
+.subtitle_icon {
+  width: 100%;
+  margin-bottom: 31px;
+}
+
+.repair__block__item {
+  width: 392px;
+  height: 100%;
+  max-height: 421px;
+  position: relative;
+}
+
+.repair__image {
+  width: 100%;
+  max-height: 421px;
+}
+
+.repair_textblock,
+.repair__price {
+  position: absolute;
+  left: 7.9%;
+}
+
+.repair_textblock {
+  width: calc(392px - 7.9% - 7.9%);
+  bottom: -36%;
+
+  background: #FFFFFF;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  padding: 25px 0 35px 31px; 
+  text-align: left;
+}
+
+.repair__price {
+  bottom: calc(-36% - 26px);
+  width: 56%;
+  height: 54px;
+  background: #E3B873;
+  text-align: center;
+}
+
+.repair__price span {
+  font-size: 18px;
+  line-height: 54px;
+}
+
+.subtitle--repair {
+  color: #363636;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.repair__list {
+  margin-top: 13px;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.repair__list__item {
+  font-size: 13px;
+  line-height: 27px;
+  color: #959595;
 }

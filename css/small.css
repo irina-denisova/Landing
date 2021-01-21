@@ -7,6 +7,22 @@
   line-height: 158.48%;
 }
 
+/* fonts size */
+.s {
+  font-size: 13px;
+  line-height: 27px;
+}
+
+.m {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.l {
+  font-size: 18px;
+  line-height: 25px;
+}
+
 .header {
   position: static;
   min-height: 57px;
@@ -47,13 +63,15 @@
 .wrap--project,
 .wrap--mainscreen,
 .wrap--videoform,
+.wrap--repair,
 .mainscreen button,
 .project-content__description,
 .project-content__images,
 .videoform__form,
 .videoform__form__input input,
 .button--submit,
-.videoform__text    {
+.videoform__text,
+.repair__block__item    {
   width: 100%;
 }
 
@@ -180,7 +198,6 @@
 
 .videoform__video {
   height: 207px;
-  margin: 40px auto;
 }
 
 .videoform__video__item {
@@ -190,7 +207,6 @@
 .videoform__video {
   width: 100%;
   height: auto;
-  margin: 46px 0 0 0;
 }
 
 .videoform__video::after {
@@ -268,3 +284,29 @@ textarea {
   color: white;
 }
 
+.repair_textblock,
+.repair__price {
+  left: 0;
+}
+
+.repair_textblock {
+  width: calc(100% - 70px);
+  margin: 0;
+}
+ 
+.repair__list__item {
+  line-height: 169.8%;
+}
+
+.repair__price { 
+  height: 40px;
+}
+
+.repair__price span {
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.repair__block__item {
+  margin-bottom: 50%;
+}

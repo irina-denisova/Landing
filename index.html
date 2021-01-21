@@ -52,13 +52,13 @@
                 <nav class="header-navigation">
                     <ul class="header-menuproject">
                         <li class="header-menuproject__item">
-                            <a class="header-menuproject__link" href="#">Rostov-on-Don, Admiral</a>
+                            <a class="m header-menuproject__link" href="#">Rostov-on-Don, Admiral</a>
                         </li>
                         <li class="header-menuproject__item">
-                            <a class="header-menuproject__link" href="#">Sochi Thieves</a>
+                            <a class="m header-menuproject__link" href="#">Sochi Thieves</a>
                         </li>
                         <li class="header-menuproject__item">
-                            <a class="header-menuproject__link" href="#">Rostov-on-Don Patriotic</a>
+                            <a class="m header-menuproject__link" href="#">Rostov-on-Don Patriotic</a>
                         </li>
                     </ul>
                 </nav>
@@ -71,19 +71,19 @@
                     </div>
                     <div class="project-content__slide-block">
                         <div class="project-content__slide__item">
-                            <h2 class="subtitle title--slide-item">City:</h2>
+                            <h2 class="subtitle l title--slide-item">City:</h2>
                             <span class="caption">Rostov-on-Don<br> LCD admiral</span>
                         </div>
                         <div class="project-content__slide__item">
-                            <h2 class="subtitle title--slide-item">apartment area:</h2>
+                            <h2 class="subtitle l title--slide-item">apartment area:</h2>
                             <span class="caption">81 m2</span>
                         </div>
                         <div class="project-content__slide__item">
-                            <h2 class="subtitle title--slide-item">Repair time:</h2>
+                            <h2 class="subtitle l title--slide-item">Repair time:</h2>
                             <span class="caption">3.5 months</span>
                         </div>
                         <div class="project-content__slide__item">
-                            <h2 class="subtitle title--slide-item">Repair Cost:</h2>
+                            <h2 class="subtitle l title--slide-item">Repair Cost:</h2>
                             <span class="caption">Upon request</span>
                         </div>
                         <div class="project-content__dots">
@@ -101,8 +101,8 @@
         <section class="videoform">
             <div class="wrap wrap--videoform">
                 <h3 class="subtitle title--videoform">online control</h3>
-                <div class="videoform__icon">
-                    <img src="./icons/video.svg" class="videoform__icon__item">
+                <div class="subtitle_icon">
+                    <img src="./icons/video.svg" class="subtitle_icon__item">
                 </div>
                 <div class="videoform__video">
                     <video controls
@@ -117,18 +117,18 @@
                             broadcasts the progress of work on the clock. 
                             At any time, you can go to our website and monitor 
                             the progress of work in your apartment. You can 
-                            watch the live broadcast from one of our facilities!
+                            watch the live broadcast from one of our facilities!<br>
                             Leave a request below and you will receive a link to
                             the broadcast.</p>
                 <form action="/order" method="post" class="videoform__form">
                     <div class="videoform__form__input">
                         <label>
                             <span class="caption">Name</span>
-                            <input type="text" class="input" name="name" placeholder="What is your name:" required>
+                            <input type="text" class="m input" name="name" placeholder="What is your name:" required>
                         </label>
                         <label>
                             <span class="caption">Phone</span>
-                            <input type="text" class="input"  name="phone" placeholder="Your phone number:" required>
+                            <input type="text" class="m input"  name="phone" placeholder="Your phone number:" required>
                         </label>
                         <input type="submit" class="button button--submit" name="submit"  value="submit">
                     </div>
@@ -139,6 +139,68 @@
                         <label for="data" class="input">I agree to the processing of personal data</label>
                     </div>
                 </form>
+            </div>
+        </section>
+        <section class="repair">
+            <div class="wrap wrap--repair">
+                <h3 class="subtitle title--repair">TYPES OF REPAIR</h3>
+                <div class="subtitle_icon">
+                    <img src="./icons/repair_icon.svg" class="subtitle_icon__item">
+                </div>
+                <div class="repair__block__item">
+                    <img src="./images/redecorating.svg" alt="redecorating image" class="repair__image">
+                    <div class="repair_textblock">
+                        <h4 class="subtitle subtitle--repair">Redecorating</h4>
+                        <ul class="repair__list">
+                            <li class="repair__list__item">Dismantling of old coatings</li>
+                            <li class="repair__list__item">Wallpapering</li>
+                            <li class="repair__list__item">Painting walls and ceilings</li>
+                            <li class="repair__list__item">Laying flooring</li>
+                            <li class="repair__list__item">Replacing plumbing</li>
+                            <li class="repair__list__item">Replacing sockets and switches</li>
+                            <li class="repair__list__item">Replacing doors</li>
+                        </ul>
+                    </div>
+                    <div class="title repair__price">
+                        <span>from 900 rub / m2</span>
+                    </div>
+                </div>
+                <div class="repair__block__item">
+                    <img src="./images/overhaul.svg" alt="overhaul image" class="repair__image">
+                    <div class="repair_textblock">
+                        <h4 class="subtitle subtitle--repair">Overhaul</h4>
+                        <ul class="repair__list">
+                            <li class="repair__list__item">Dismantling of old coatings</li>
+                            <li class="repair__list__item">Wallpapering</li>
+                            <li class="repair__list__item">Painting walls and ceilings</li>
+                            <li class="repair__list__item">Laying flooring</li>
+                            <li class="repair__list__item">Replacing plumbing</li>
+                            <li class="repair__list__item">Replacing sockets and switches</li>
+                            <li class="repair__list__item">Replacing doors</li>
+                        </ul>
+                    </div>
+                    <div class="title repair__price">
+                        <span>from 1800 rub / m2</span>
+                    </div>
+                </div>
+                <div class="repair__block__item">
+                    <img src="./images/design.svg" alt="designer repair image" class="repair__image">
+                    <div class="repair_textblock">
+                        <h4 class="subtitle subtitle--repair">Designer Repair</h4>
+                        <ul class="repair__list">
+                            <li class="repair__list__item">Dismantling of old coatings</li>
+                            <li class="repair__list__item">Wallpapering</li>
+                            <li class="repair__list__item">Painting walls and ceilings</li>
+                            <li class="repair__list__item">Laying flooring</li>
+                            <li class="repair__list__item">Replacing plumbing</li>
+                            <li class="repair__list__item">Replacing sockets and switches</li>
+                            <li class="repair__list__item">Replacing doors</li>
+                        </ul>
+                    </div>
+                    <div class="title repair__price">
+                        <span>from 4000 rub / m2</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

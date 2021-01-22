@@ -385,7 +385,7 @@ a:hover {
 
 .videoform__video__item {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .videoform__video::before {

@@ -1,26 +1,7 @@
 /* Header */
-.dot, 
-.caption,
-.project-content___subtitle,
-.videoform__text {
-  font-size: 11px;
-  line-height: 158.48%;
-}
-
-/* fonts size */
-.s {
-  font-size: 13px;
-  line-height: 27px;
-}
-
-.m {
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.l {
-  font-size: 18px;
-  line-height: 25px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -59,28 +40,33 @@
   padding-right: 18px;
 }
 
-.wrap--header,
+.dot, 
+.caption,
+.project-content___subtitle,
+.videoform__text {
+  font-size: 11px;
+  line-height: 158.48%;
+}
+
+.wrap--mainscreen,
 .wrap--project,
 .wrap--mainscreen,
+.wrap--project,
 .wrap--videoform,
-.wrap--repair,
-.mainscreen button,
+.wrap--repair  {
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+}
+
+.mainscreen button, 
 .project-content__description,
 .project-content__images,
 .videoform__form,
-.button--submit,
-.videoform__form input,
+.button--submit, 
 .videoform__text,
 .repair__block__item    {
   width: 100%;
-}
-
-.wrap--header,
-.wrap--project,
-.wrap--mainscreen,
-.wrap--videoform {
-  max-width: 1100px;
-  height: 100%;
 }
 
 .mainscreen {
@@ -142,11 +128,6 @@
   order: 2;
 }
 
-.project-content__images__item {
-  width: 100%; 
-  height: auto;
-}
-
 .project-content__images::before,
 .project-content__images::after {
     cursor: pointer;
@@ -186,7 +167,7 @@
 /* Page 3 - online control */
 
 .videoform {
-  margin-top: -1px;
+  padding-top: 360px;
   background: black;
   height: 100%;
 }
@@ -198,15 +179,6 @@
 
 .videoform__video {
   height: 207px;
-}
-
-.videoform__video__item {
-  width: 100%;
-}
-
-.videoform__video {
-  width: 100%;
-  height: auto;
 }
 
 .videoform__video::after {
@@ -250,6 +222,7 @@
 input[type = 'text'] {
   background-color: black;
   border-bottom: 1px solid white;
+  width: 100%;
 }
 
 label:first-child {
@@ -257,7 +230,7 @@ label:first-child {
 }
 
 input[type = 'submit'] {
-  transform: translateY(105px);
+  transform: translateY(90px);
 }
 
 .videoform__form__checkbox {
@@ -280,6 +253,10 @@ input,
 select, 
 textarea {
   color: white;
+}
+
+.repair {
+  margin-top: 62px;
 }
 
 .repair_textblock,
@@ -306,5 +283,5 @@ textarea {
 }
 
 .repair__block__item {
-  margin-bottom: 50%;
+  margin-bottom: 65%;
 }

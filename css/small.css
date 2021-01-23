@@ -1,9 +1,4 @@
 /* Header */
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   position: static;
   min-height: 57px;
@@ -88,6 +83,11 @@
   margin-top: 32px;
 } 
 
+.project,
+.videoform {
+  background: #000;
+}
+
 /* Page 2 - project */
 
 .project {
@@ -167,8 +167,8 @@
 /* Page 3 - online control */
 
 .videoform {
-  padding-top: 360px;
-  background: black;
+  padding-top: 45px;
+  margin-top: 0;
   height: 100%;
 }
 
@@ -234,7 +234,7 @@ input[type = 'submit'] {
 }
 
 .videoform__form__checkbox {
-  transform: translateY(-80px);
+  transform: translateY(-70px);
   text-align: left;
 }
 
@@ -256,12 +256,23 @@ textarea {
 }
 
 .repair {
-  margin-top: 62px;
+  padding-top: 62px;
+  margin-top: 0;
+  background: #fff;
+  height: 100%;
+}
+
+.repair__image {
+  max-height: 365px;
 }
 
 .repair_textblock,
 .repair__price {
   left: 0;
+}
+
+.subtitle--repair {
+  font-size: 15px;
 }
 
 .repair_textblock {
@@ -281,7 +292,11 @@ textarea {
   font-size: 15px;
   line-height: 40px;
 }
+.repair__block__item:nth-child(even) {
+  margin: 0 0 59px 0;
+}
 
 .repair__block__item {
-  margin-bottom: 65%;
+  margin-bottom: 59px;
+  height: 484px;
 }

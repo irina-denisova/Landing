@@ -475,7 +475,8 @@ label[for = 'data'] {
 
 input[type = 'checkbox'] {  /* Скрытие стандартного переключателя  */
   z-index: -1;
-  opacity: 0; 
+  opacity: 0;
+  position: absolute;
 }
 
 input[type = 'checkbox'] + label {
@@ -533,10 +534,13 @@ select:focus {
 }
 
 .repair__block__item {
-  width: 392px;
-  height: 100%;
-  max-height: 421px;
+  width: calc(100% / 3 - 2%);
+  height: 608px;
   position: relative;
+}
+
+.repair__block__item:nth-child(even) {
+  margin: 0 2%;
 }
 
 .repair__image {
@@ -552,16 +556,16 @@ select:focus {
 
 .repair_textblock {
   width: calc(392px - 7.9% - 7.9%);
-  bottom: -36%;
+  bottom: 27px;
 
   background: #FFFFFF;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-  padding: 25px 0 35px 31px; 
+  padding: 25px 0 42px 31px;
   text-align: left;
 }
 
 .repair__price {
-  bottom: calc(-36% - 26px);
+  bottom: 0;
   width: 56%;
   height: 54px;
   background: #E3B873;
